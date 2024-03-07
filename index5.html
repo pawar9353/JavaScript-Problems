@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      function add() {
+        let a = Number(document.getElementById("n1").value);
+        let b = Number(document.getElementById("n2").value);
+        console.log(a + b);
+        alert(a + b);
+      }
+      function mul() {
+        let a = Number(document.getElementById("n1").value);
+        let b = Number(document.getElementById("n2").value);
+        console.log(a * b);
+        alert(a * b);
+      } -->
+    <!-- </script>
+    <form>
+      <label>a</label>
+      <input type="text" id="n1" />
+      <br />
+      <label>b</label>
+      <input type="text" id="n2" />
+      <br />
+      <input type="submit" onclick="add()" /><br />
+      <input type="submit" onclick="mul()" /><br />
+      <input type="submit" onclick="sub()" /><br />
+      <input type="submit" onclick="div()" /><br />
+    </form> -->
+
+    <script>
+      function validation() {
+        let un = document.getElementById("u1").value;
+        let pwd = document.getElementById("p1").value;
+        document.getElementById("userpara").innerHTML = un;
+        document.getElementById("userpara").innerHTML = pwd;
+        console.log(un);
+        console.log(pwd);
+        if (un.length <= 8 && pwd.length <= 6) {
+          alert("Login Sucess");
+        } else {
+          alert("Login Failure");
+        }
+        return false;
+      }
+    </script>
+
+    <form>
+      <label>Username</label><br />
+      <input type="text" id="u1" />
+      <br />
+      <label>Password</label><br />
+      <input type="password" id="p1" /><br />
+      <input type="submit" onclick="return validation()" />
+      <p id="userpara"></p>
+    </form>
+  </body>
+</html>
